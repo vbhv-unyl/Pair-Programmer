@@ -1,0 +1,17 @@
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+
+# Async SQLAlchemy
+SQLAlchemy==2.0.29
+asyncpg==0.29.0
+greenlet==2.0.2
+
+# Pydantic v2 + settings
+pydantic==2.7.1
+pydantic-settings==2.2.1
+
+# Redis async
+redis==5.0.3
+aioredis==2.0.1
+
+python-dotenv==1.0.1
