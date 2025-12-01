@@ -1,4 +1,4 @@
-# 🧩 Real-Time Collaborative Code Editor
+# Real-Time Collaborative Code Editor
 
 A production-grade real-time collaborative code editor built using **FastAPI**, **WebSockets**, **Redis (as cache)**, **PostgreSQL**, and **React + Redux**.
 
@@ -20,7 +20,7 @@ Users can:
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Components
+# 🧩 Components
 
 ### 1. Frontend: React + Redux
 - **Responsibilities:**
@@ -88,28 +88,11 @@ This architecture ensures:
 
 
 # Data Flow Diagram
-User Types Code
-      │
-      ▼
-Local Redux State Updates
-      │
-      ▼
-Debounced WebSocket message sent
-      │
-      ▼
-FastAPI WebSocket Server
-      │
-      ▼
-Sync Cache (Redis)
-      │
-      ▼
-Backend broadcasts to other clients
-      │
-      ▼
-Redux updates → Editor updates remotely
+
+<img width="1536" height="1024" alt="ChatGPT Image Dec 2, 2025, 01_39_54 AM" src="https://github.com/user-attachments/assets/65cba5c1-91f6-471a-b8ba-5b098c696e58" />
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 # 🏃‍♂️ Running the Real-Time Collaborative Code Editor
@@ -145,11 +128,15 @@ source .venv/bin/activate       # Linux / macOS
 
 ### 1.2 Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
 ### 1.3 Run the FastAPI Backend
 
+```bash
 python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
 
 ---
 
@@ -157,15 +144,21 @@ python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 ### 2.1 Go to the frontend folder
 
+```bash
 cd frontend
+```
 
 ### 2.2 Install dependencies
 
+```bash
 npm install
+```
 
 ### 2.3 Start the development server
 
+```bash
 npm run dev
+```
 
 ---
 
