@@ -1,6 +1,6 @@
 # Real-Time Collaborative Code Editor
 
-A production-grade real-time collaborative code editor built using **FastAPI**, **WebSockets**, **Redis (as cache)**, **PostgreSQL**, and **React + Redux**.
+A real-time collaborative code editor built using **FastAPI**, **WebSockets**, **Redis (as cache)**, **PostgreSQL**, and **React + Redux**.
 
 Users can:
 - Create or join rooms  
